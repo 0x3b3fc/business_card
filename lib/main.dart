@@ -21,6 +21,14 @@ class BusinessCardApp extends StatelessWidget {
                 backgroundImage: AssetImage('images/personal.jpg'),
               ),
             ),
+            Text(
+              'Sief Hesham',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 30,
+                fontFamily: 'Pacifico',
+              ),
+            ),
           ],
         ),
       ),
