@@ -12,6 +12,7 @@ class BusinessCardApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Color(0xff2B475E),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               radius: 160,
@@ -42,13 +43,13 @@ class BusinessCardApp extends StatelessWidget {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Spacer(
-                          flex: 2,
-                        ),
-                        Icon(
-                          Icons.phone,
-                          size: 32,
-                          color: Color(0xff3265B8),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 30.0),
+                          child: Icon(
+                            Icons.phone,
+                            size: 32,
+                            color: Color(0xff3265B8),
+                          ),
                         ),
                         Spacer(
                           flex: 1,
@@ -60,7 +61,7 @@ class BusinessCardApp extends StatelessWidget {
                           ),
                         ),
                         Spacer(
-                          flex: 2,
+                          flex: 3,
                         )
                       ],
                     ),
